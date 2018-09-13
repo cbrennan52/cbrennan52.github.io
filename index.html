@@ -2,10 +2,200 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Caroline's Webpage</title>
+		<title>DC Desserts</title>
+		<!-- Bootstrap -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--font awesome CDN for icons https://fontawesome.com/icons?d=gallery-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	</head>
 	<body>
-		<h1>Hello World</h1>
+		<!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close modalClose" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-center" id="myModalLabel">Need a suggestion about what to give your sweet tooth later? <br>Look no further!</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        <button id="dessertGenerator" type="button" class="btn btn-default">CLICK ME!</button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div id="dessertGenOutput"><br></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default modalClose" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<nav class="navbar navbar-fixed-top navbar-custom">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand fancy-title" href="index.html">DC DESSERTS</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="html/reviews.html">Reviews</a></li>
+						<li><a href="#">Upcoming</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+                    <form class="navbar-form navbar-right">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Random Dessert Generator</button>
+                    </form>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<div class="container-fluid">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				    	<div class="row">
+					        <div class="col-md-6 no-gutter">
+					        	<img src="https://blog.apartminty.com/wp-content/uploads/2017/07/Screen-Shot-2017-07-25-at-10.58.06-AM.png" class="center-block img-responsive visible-md visible-lg" alt="Triple Craft" width="100%" height="100%">
+					        </div>
+					        <div class="col-md-6 no-gutter">
+					        	<img src="https://blog.apartminty.com/wp-content/uploads/2017/07/Screen-Shot-2017-07-25-at-10.58.06-AM.png" class="center-block img-responsive" alt="Triple Craft" width="100%" height="100%">
+					        </div>			       
+					        <div class="carousel-caption ">
+					        	<div class="jumbotron text-center">
+								  	<h1>NEW! Triple Craft Review</h1>
+								  	<p>Your one-stop destination for burgers and ~fancy~ shakes next to an airport</p>
+								  	<p><a class="btn btn-primary btn-lg" href="tripleCraft.html" role="button">Find out more</a></p>
+								</div>
+					        </div>
+				    	</div>
+					</div>
+				    <div class="item">
+				        <div class="row">
+					        <div class="col-md-6 no-gutter">
+					        	<img src="https://blog.apartminty.com/wp-content/uploads/2017/07/Screen-Shot-2017-07-25-at-7.43.19-AM.png" class="center-block img-responsive visible-md visible-lg" alt="Momofuku Milk Bar" width="100%" height="100%">
+					        </div>
+					        <div class="col-md-6 no-gutter">
+					        	<img src="https://blog.apartminty.com/wp-content/uploads/2017/07/Screen-Shot-2017-07-25-at-7.43.19-AM.png" class="center-block img-responsive" alt="Momofuku Milk Bar" width="100%" height="100%">
+					        </div>						        
+					        <div class="carousel-caption ">
+					        	<div class="jumbotron text-center">
+								  	<h1>Momofuku Milk Bar</h1>
+								  	<p>Two words: cereal milk</p>
+								  	<p><a class="btn btn-primary btn-lg" href="tripleCraft.html" role="button">Find out more</a></p>
+								</div>
+					        </div>
+				    	</div>
+				    </div>
+				    <div class="item">
+				        <div class="row">
+					        <div class="col-md-6 no-gutter">
+					        	<img src=" https://blog.apartminty.com/wp-content/uploads/2017/07/Screen-Shot-2017-07-24-at-5.47.03-PM.png" class="center-block img-responsive visible-md visible-lg" alt="Icy Code Ice Cream Rolls" width="100%" height="100%">
+					        </div>
+					        <div class="col-md-6 no-gutter">
+					        	<img src=" https://blog.apartminty.com/wp-content/uploads/2017/07/Screen-Shot-2017-07-24-at-5.47.03-PM.png" class="center-block img-responsive" alt="Icy Code Ice Cream Rolls" width="100%" height="100%">
+					        </div>						        
+					        <div class="carousel-caption ">
+					        	<div class="jumbotron text-center">
+								  	<h1>Icy Code Ice Cream Rolls</h1>
+								  	<p>Ice cream ROLLS! What could be better?</p>
+								  	<p><a class="btn btn-primary btn-lg" href="tripleCraft.html" role="button">Find out more</a></p>
+								</div>
+					        </div>
+				    	</div>
+				    </div>
+				</div>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="page-header text-center fancy-title">
+				<h1>DC DESSERTS</h1>
+			</div>
+			<div class="row center-col">
+				<div class="col-md-5 col-md-offset-1">
+					<blockquote>
+						<p>"My go-to destination for all things dessert in the city"</p>
+						<footer>Someone famous</footer>
+					</blockquote>
+					<blockquote>
+						<p>"DC Desserts puny commentary on local dessert spots always keeps me coming back for more"</p>
+						<footer>Real Person from <em>The Real Washington Newspaper</em></footer>
+					</blockquote>
+				</div>
+				<div class="col-md-5">
+					<h1 class="text-center">About</h1>
+					<p>Letterpress forage flannel typewriter swag sartorial marfa hoodie chicharrones thundercats unicorn chillwave direct trade. Organic quinoa PBR&B pabst man braid helvetica celiac bitters vexillologist bicycle rights chicharrones jean shorts letterpress chia portland. Semiotics pitchfork cray, af narwhal ennui vaporware man braid. Marfa taiyaki slow-carb sriracha poutine quinoa actually pork belly kogi salvia hot chicken butcher organic umami. Green juice vegan fanny pack, vexillologist distillery brooklyn unicorn celiac gastropub blue bottle raw denim.<br><br>Jean shorts cliche knausgaard snackwave wolf drinking vinegar fanny pack tilde kitsch tumblr intelligentsia meh quinoa. Affogato quinoa craft beer, pop-up lomo shoreditch man braid la croix chillwave fashion axe beard kinfolk paleo coloring book gentrify. Keffiyeh slow-carb shoreditch, pop-up fashion axe pabst bespoke austin portland brunch poke ennui before they sold out. Mlkshk distillery dreamcatcher shabby chic jean shorts irony mustache woke flannel snackwave four dollar toast waistcoat kickstarter everyday carry. Selvage four loko marfa fixie mlkshk poke authentic post-ironic ugh four dollar toast farm-to-table keytar. Schlitz wolf af sriracha thundercats mumblecore kombucha paleo cloud bread food truck snackwave vexillologist mustache.<br><br>Mixtape flexitarian butcher 3 wolf moon intelligentsia man braid, four loko jean shorts tote bag taxidermy austin fam offal irony. Cardigan mustache cliche truffaut blog fingerstache. Palo santo bushwick occupy, scenester freegan typewriter aesthetic DIY. Coloring book shoreditch small batch cold-pressed deep v viral slow-carb you probably haven't heard of them. Put a bird on it coloring book franzen shaman butcher.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+						<form><fieldset>
+				<legend>Contact Us</legend>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+				<div class="input-group">
+				  	<span class="input-group-addon" id="basic-addon1">Name</span>
+				  	<input type="text" class="form-control" placeholder="Your Name" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group">
+				  	<span class="input-group-addon" id="basic-addon1">Email</span>
+				  	<input type="text" class="form-control" placeholder="youremail@email.com" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group">
+				  	<span class="input-group-addon" id="basic-addon1">Message</span>
+				  	<textarea type="text" class="form-control" placeholder="Type in what you want to tell us!" aria-describedby="basic-addon1"></textarea> 
+				</div>
+				<div class="btn-group" role="group" aria-label="...">
+				  	<button id="submitButton" type="submit" class="btn btn-default">Submit</button>
+				</div>
+				<div id="submitAlert" class="alert alert-success" role="alert" hidden><strong>SUCCESS! Thanks for messaging us, we'll be in touch soon!</strong></div>
+			</div>
+			</div>
+		</fieldset>
+		</form>
+		</div>
+		<div class="container">
+			<footer>
+			  	<div class="container-fluid text-muted text-center footer-bottom">
+			    	<p>Contact: email@email.com | 000-000-0000 | 1000 Dessert St., Washington, DC, USA 00000<br>Follow me: 
+			    		<i class="fab fa-instagram fa-lg"></i> @dc-desserts-real 
+			    		<i class="fab fa-snapchat-ghost"></i> @dcdessertsOG
+
+			    		<br>
+			    		Developed by <a href="aboutMe.html">Caroline Brennan</a><br>Have a ~sweet~ day!</p>
+			  	</div>
+			</footer>
+		</div>
+		<script src="js/submitButton.js"></script>
+		<script src="js/randomDessert.js"></script>
+		<!-- Bootstrap: Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
 </html>
 
