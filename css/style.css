@@ -27,6 +27,14 @@ body {
   max-height: 100%;
   max-width: 100%;
 }
+.btn-custom,
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:visited,
+.btn-custom:focus {
+  background-color: #bf80ff;
+  border-color: #cc99ff;
+}
 /*From https://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap */
 .navbar-custom {
     background-color: #cc99ff;
