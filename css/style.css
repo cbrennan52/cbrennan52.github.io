@@ -9,8 +9,10 @@ body {
 	padding-top: 20px;
 }
 .fancy-title {
-  text-shadow: 2px 4px 10px black;
-  font-family: "Courier New", Courier, monospace;
+  text-shadow: 2px 4px 20px black;
+  font-family: "NaziTypewriterRegular";
+  font-weight: normal; 
+  font-style: normal; 
 }
 .no-gutter {
   padding-right: 0;
@@ -25,7 +27,6 @@ body {
   max-height: 100%;
   max-width: 100%;
 }
-
 /*From https://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap */
 .navbar-custom {
     background-color: #cc99ff;
