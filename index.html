@@ -13,7 +13,9 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<!-- link to logo font -->
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/nazi-typewriter" type="text/css"/>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- include summernote -->
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
 	</head>
 	<body>
 		<!-- Modal -->
@@ -157,30 +159,31 @@
 			</div>
 		</div>
 		<div class="container">
-						<form><fieldset>
-				<legend>Contact Us</legend>
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center">
-				<div class="input-group">
-				  	<span class="input-group-addon" id="basic-addon1">Name</span>
-				  	<input type="text" class="form-control" placeholder="Your Name" aria-describedby="basic-addon1">
-				</div>
-				<div class="input-group">
-				  	<span class="input-group-addon" id="basic-addon1">Email</span>
-				  	<input type="text" class="form-control" placeholder="youremail@email.com" aria-describedby="basic-addon1">
-				</div>
-				<div class="input-group">
-				  	<span class="input-group-addon" id="basic-addon1">Message</span>
-				  	<textarea type="text" class="form-control" placeholder="Type in what you want to tell us!" aria-describedby="basic-addon1"></textarea> 
-				</div>
-				<div class="btn-group" role="group" aria-label="...">
-				  	<button id="submitButton" type="submit" class="btn btn-default">Submit</button>
-				</div>
-				<div id="submitAlert" class="alert alert-success" role="alert" hidden><strong>SUCCESS! Thanks for messaging us, we'll be in touch soon!</strong></div>
-			</div>
-			</div>
-		</fieldset>
-		</form>
+			<form>
+				<fieldset>
+					<legend>Contact Us</legend>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<div class="input-group">
+							  	<span class="input-group-addon" id="basic-addon1">Name</span>
+							  	<input type="text" class="form-control" placeholder="Your Name" aria-describedby="basic-addon1">
+							</div>
+							<div class="input-group">
+							  	<span class="input-group-addon" id="basic-addon1">Email</span>
+							  	<input type="text" class="form-control" placeholder="youremail@email.com" aria-describedby="basic-addon1">
+							</div>
+							<div class="input-group">
+								<textarea id="summernote" name="editordata"></textarea>
+							</div>
+							<div class="btn-group" role="group" aria-label="...">
+							  	<button id="submitButton" type="submit" class="btn btn-default">Submit</button>
+							</div>
+							<div id="submitAlert" class="alert alert-success" role="alert" hidden><strong>SUCCESS! Thanks for messaging us, we'll be in touch soon!</strong></div>
+
+						</div>
+					</div>
+				</fieldset>
+			</form>
 		</div>
 		<div class="container">
 			<footer>
@@ -188,7 +191,6 @@
 			    	<p>Contact: email@email.com | 000-000-0000 | 1000 Dessert St., Washington, DC, USA 00000<br>Follow me: 
 			    		<i class="fab fa-instagram fa-lg"></i> @dc-desserts-real 
 			    		<i class="fab fa-snapchat-ghost"></i> @dcdessertsOG
-
 			    		<br>
 			    		Developed by <a href="html/construction.html">Caroline Brennan</a><br>Have a ~sweet~ day!</p>
 			  	</div>
@@ -196,6 +198,7 @@
 		</div>
 		<script src="js/submitButton.js"></script>
 		<script src="js/randomDessert.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
 		<!-- Bootstrap: Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
