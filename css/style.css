@@ -24,8 +24,8 @@ body {
   flex-wrap: wrap;
 }
 .thumb-size {
-  max-height: 100%;
-  max-width: 100%;
+  height: 100%;
+  width: 100%;
 }
 .btn-custom,
 .btn-custom:hover,
@@ -34,8 +34,16 @@ body {
 .btn-custom:focus {
   background-color: #bf80ff;
   border-color: #cc99ff;
+  color: white;
 }
-
+.img-fill {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.hide-overflow {
+  overflow: hidden;
+}
 /*From https://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap */
 .navbar-custom {
     background-color: #cc99ff;

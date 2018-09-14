@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DC Desserts | Triple Craft Review</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!--font awesome CDN for icons https://fontawesome.com/icons?d=gallery-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!-- link to logo font -->
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/nazi-typewriter" type="text/css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close modalClose" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-center" id="myModalLabel">Need a suggestion about what to give your sweet tooth later? <br>Look no further!</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        <button id="dessertGenerator" type="button" class="btn btn-default">CLICK ME!</button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div id="dessertGenOutput"><br></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default modalClose" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-fixed-top navbar-custom">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand fancy-title" href="../index.html">DC DESSERTS</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="construction.html">Upcoming</a></li>
+                        <li><a href="construction.html">About</a></li>
+                        <li><a href="construction.html">Contact</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right"> 
+                        <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#myModal">Random Dessert Generator</button>
+                    </form>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="container text-center">
+            <h1 class="fancy-title">Oh no! :(</h1>
+            <h4><br>Looks like this page is currently under construction right now. <br>Check back later for a sweet read!</h4>
+        </div>
+
+		<div class="container">
+			<footer>
+			  	<div class="container-fluid text-muted text-center footer-bottom">
+			    	<p>Contact: email@email.com | 000-000-0000 | 1000 Dessert St., Washington, DC, USA 00000<br>Follow me: 
+			    		<i class="fab fa-instagram fa-lg"></i> @dc-desserts-real 
+			    		<i class="fab fa-snapchat-ghost"></i> @dcdessertsOG
+
+			    		<br>
+			    		Developed by <a href="construction.html">Caroline Brennan</a><br>Have a ~sweet~ day!</p>
+			  	</div>
+			</footer>
+		</div>
+        <script src="../js/randomDessert.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
